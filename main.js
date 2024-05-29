@@ -1,7 +1,95 @@
+//NUMBER 16!!!
+
+/*
+Arrow style Functions
+Come here to practice the Arrow style functions Not much else to say good luck!
+Details
+You will be given an array of numbers which can be used using the String.fromCharCode() (JS), 
+Tools.FromCharCode() (C#) method to convert the number to a character. It is recommended to map over 
+the array of numbers and convert each number to the corresponding ascii character.
+
+Examples
+These are example of how to convert a number to an ascii Character:
+Javascript => String.fromCharCode(97) // a
+C# => Tools.FromCharCode(97) // a
+*/ 
+
+//MY SOLUTION
+var ArrowFunc = function(arr) {
+  return arr.map((number) => {
+    return String.fromCharCode(number);
+  }).join('');
+}
+
+//NUMBER 15!!!
+
+/*
+Character recognition software is widely used to digitise printed texts. 
+Thus the texts can be edited, searched and stored on a computer.
+
+When documents (especially pretty old ones written with a typewriter), are 
+digitised character recognition softwares often make mistakes.
+
+Your task is correct the errors in the digitised text. You only have to handle the following mistakes:
+
+S is misinterpreted as 5
+O is misinterpreted as 0
+I is misinterpreted as 1
+The test cases contain numbers only by mistake.
+*/ 
+
+//MY SOLUTION
+function correct(string) {
+  
+  let chars = string.split('');
+  
+  for (let i = 0; i < chars.length; i++) {
+    
+    if (chars[i] === '0') {
+      chars[i] = 'O';
+    } else if (chars[i] === '5') {
+      chars[i] = 'S';
+    } else if (chars[i] === '1') {
+      chars[i] = 'I';
+    }
+  }
+  
+  
+  return chars.join('');
+}
+
 //NUMBER 14!!!
 
 /*
+Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
 
+Return your answer as a number.
+*/ 
+
+//MY SOLUTION
+function sumMix(x){
+  let sum = 0
+  x.forEach((number) => {
+    sum = sum + Number(number)
+  })
+  return sum
+}
+
+//NUMBER 13!!!
+
+/*
+Coding in function alienLanguage, function accept 1 parameter:str. str is a sentence.
+
+We translate the sentence into an alien language according to the following rules:
+
+Each word in the sentence is separated by spaces. The last letter of each word in the sentence turns to 
+lowercase, and the other letters are capitalized. Looks very strange? Because this is the form of alien language ;-)
+
+for example:
+
+alienLanguage("My name is John") should return "My NAMe Is JOHn"
+alienLanguage("this is an example") should return "THIs Is An EXAMPLe"
+alienLanguage("Hello World") should return "HELLo WORLd"
 
 */ 
 
