@@ -1,3 +1,62 @@
+//NUMBER 17!!!
+
+/*
+There are 32 letters in the Polish alphabet: 9 vowels and 23 consonants.
+
+Your task is to change the letters with diacritics:
+
+ą -> a,
+ć -> c,
+ę -> e,
+ł -> l,
+ń -> n,
+ó -> o,
+ś -> s,
+ź -> z,
+ż -> z
+and print out the string without the use of the Polish letters.
+
+For example:
+
+"Jędrzej Błądziński"  -->  "Jedrzej Bladzinski"
+*/ 
+
+//MY SOLUTION
+function correctPolishLetters (string) {
+  let newString = string.split('')
+  for (let i = 0; i < newString.length; i++) {
+   if (newString[i] === 'ą') {
+     newString[i] = 'a'
+   }
+    else if (newString[i] === 'ć') {
+     newString[i] = 'c'
+   }
+    else if (newString[i] === 'ę') {
+     newString[i] = 'e'
+   }
+    else if (newString[i] === 'ł') {
+     newString[i] = 'l'
+   }
+    else if (newString[i] === 'ń') {
+     newString[i] = 'n'
+   }
+     else if (newString[i] === 'ó') {
+     newString[i] = 'o'
+   }
+    else if (newString[i] === 'ś') {
+     newString[i] = 's'
+   }
+    else if (newString[i] === 'ź') {
+     newString[i] = 'z'
+   }
+    else if (newString[i] === 'ż') {
+     newString[i] = 'z'
+   }
+  }
+  
+  return newString.join('')
+}
+
 //NUMBER 16!!!
 
 /*
