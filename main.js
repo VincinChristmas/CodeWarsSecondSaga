@@ -1,3 +1,37 @@
+//NUMBER 18!!!
+
+/*
+Your mission is to implement a function that converts the following potentially harmful characters:
+
+< --> &lt;
+> --> &gt;
+" --> &quot;
+& --> &amp;
+Good luck :D
+*/ 
+
+//MY SOLUTION
+function htmlspecialchars(formData) {
+  // Insert your code here
+  let formDataa = formData.split('')
+  for (let i = 0; i < formDataa.length; i++) {
+  if (formDataa[i] === '<') {
+    formDataa[i] = '&lt;'
+  }
+  else if (formDataa[i] === '>') {
+    formDataa[i] = '&gt;'
+  }
+  else if (formDataa[i] === '"') {
+    formDataa[i] = '&quot;'
+  }
+  else if (formDataa[i] === '&') {
+    formDataa[i] = '&amp;'
+  }
+  
+    }
+  return formDataa.join('')
+}
+
 //NUMBER 17!!!
 
 /*
