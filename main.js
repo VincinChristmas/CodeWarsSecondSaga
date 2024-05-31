@@ -1,3 +1,63 @@
+//NUMBER 20!!!
+
+/*
+Write a function that removes the spaces from the string, then return the resultant string.
+
+Examples:
+
+Input -> Output
+"8 j 8   mBliB8g  imjB8B8  jl  B" -> "8j8mBliB8gimjB8B8jlB"
+"8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd" -> "88Bifk8hB8BB8BBBB888chl8BhBfd"
+"8aaaaa dddd r     " -> "8aaaaaddddr"
+*/ 
+
+//MY SOLUTION
+function noSpace(x){
+  let home = []
+ let letter = x.split('')
+  letter.forEach((newLetter) => {
+    newLetter.trim()
+  })
+  for (let i = 0; i < letter.length; i++) {
+  if (letter[i] !== ' ') {
+    home.push(letter[i])
+  }
+}
+  return home.join('')
+}
+
+
+
+//NUMBER 19!!!
+
+/*
+write me a function stringy that takes a size and returns a string of alternating 1s and 0s.
+
+the string should start with a 1.
+
+a string with size 6 should return :'101010'.
+
+with size 4 should return : '1010'.
+
+with size 12 should return : '101010101010'.
+
+The size will always be positive and will only use whole numbers.
+*/ 
+
+//MY SOLUTION
+function stringy(size) {
+  let strings = [];
+  let positive = '1';
+  let neutral = '0'; 
+  
+  for (let i = 0; i < size; i++) {
+    strings.push(i % 2 === 0 ? positive : neutral);
+  }
+  
+  return strings.join('');
+}
+
+
 //NUMBER 18!!!
 
 /*
