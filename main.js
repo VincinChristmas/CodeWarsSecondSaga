@@ -1,3 +1,54 @@
+//NUMBER 21!!!
+
+/*
+Given two strings comprised of + and -, return a new string which shows how the two strings interact in the following way:
+
+When positives and positives interact, they remain positive.
+When negatives and negatives interact, they remain negative.
+But when negatives and positives interact, they become neutral, and are shown as the number 0.
+Worked Example
+("+-+", "+--") ➞ "+-0"
+# Compare the first characters of each string, then the next in turn.
+# "+" against a "+" returns another "+".
+# "-" against a "-" returns another "-".
+# "+" against a "-" returns "0".
+# Return the string of characters.
+Examples
+("--++--", "++--++") ➞ "000000"
+
+("-+-+-+", "-+-+-+") ➞ "-+-+-+"
+
+("-++-", "-+-+") ➞ "-+00"
+*/ 
+
+//MY SOLUTION
+function neutralise(s1, s2) {
+  let piledUp = []
+  let newStack
+  let s11 = s1.split('')
+  let s22 = s2.split('')
+  //use logical operators
+  //iterate through s1
+  //compare element in s1 to element in s2
+  //do logical operation
+  //push logic results into new array
+  //return newArray.join()
+  for (let i = 0; i < s11.length; i++) {
+    newStack = s11[i] + s22[i]
+    if (newStack === '+' + '+') {
+      piledUp.push('+')
+    }
+    else if (newStack === '-' + '-') {
+      piledUp.push('-')
+    }
+    else {
+      piledUp.push("0")
+    }
+  }
+  return piledUp.join('')
+}
+
+
 //NUMBER 20!!!
 
 /*
