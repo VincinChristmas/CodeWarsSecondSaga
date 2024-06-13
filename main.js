@@ -1,3 +1,16 @@
+//NUMBER 32!!!
+
+/*
+
+This code does not execute properly. Try to figure out why.
+*/ 
+
+//MY SOLUTION
+function multiply(a, b){
+  return a * b
+}
+
+
 //NUMBER 31!!!
 
 /*
@@ -27,6 +40,7 @@ function getCount(str) {
 }
   return vowelArr.length
   }
+
 
 
 
