@@ -1,15 +1,32 @@
 //NUMBER 31!!!
 
 /*
-This code does not execute properly. Try to figure out why.
+Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+The input string will only consist of lower case letters and/or spaces.
 
 
 */ 
 
 //MY SOLUTION
-function multiply(a, b){
-  return a * b
+function getCount(str) {
+  //make an empty array to collect the vowels.
+  //use an if/else statemment to push vowels to the array
+  //iterate through the strings to find vowels
+  //make a sum variable to prepare to count the vowles
+  //return total sum
+  let vowelArr = []
+  let sum = 0 
+  for (let i = 0; i <= str.length; i++) {
+  if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] === 'o' || str[i] == 'u') {
+    vowelArr.push(str[i])
+  }
+    
 }
+  return vowelArr.length
+  }
 
 
 
