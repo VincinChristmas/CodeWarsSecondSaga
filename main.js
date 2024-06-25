@@ -1,3 +1,23 @@
+//NUMBER 45!!!
+
+/*
+Build a function that returns an array of integers from n to 1 where n>0.
+
+Example : n=5 --> [5,4,3,2,1]
+
+*/ 
+
+//MY SOLUTION
+const reverseSeq = n => {
+  let diff = n
+  let numCollection = []
+  while (diff > 0) {
+    numCollection.push(diff)
+    diff = diff - 1
+  }
+  return numCollection
+};
+
 //NUMBER 44!!!
 
 /*
