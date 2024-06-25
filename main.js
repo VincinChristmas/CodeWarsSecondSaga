@@ -1,3 +1,38 @@
+//NUMBER 46!!!
+
+/*
+This time no story, no theory. The examples below show you how to write function accum:
+
+Examples:
+accum("abcd") -> "A-Bb-Ccc-Dddd"
+accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+accum("cwAt") -> "C-Ww-Aaa-Tttt"
+The parameter of accum is a string which includes only letters from a..z and A..Z.
+*/ 
+
+//MY SOLUTION
+function accum(s) {
+	// set the string to lower case
+  //make each character in the string repeat itself.
+  //push each charater into a new array
+  //concatenate the needed parts of the array
+  //return the new array with the appropriate join method
+  
+  let newS = s.toLowerCase() 
+  let newArr = []
+  let sum = 0
+  for(let i = 0; i < newS.length; i++) {
+    sum = sum + 1
+    newArr.push(newS[i].repeat(sum))
+  }
+  let finalArray = []
+  for (let i = 0; i < newArr.length; i++) {
+    finalArray.push(newArr[i][0].toUpperCase() + newArr[i].slice(1))
+  }
+  return finalArray.join('-')
+}
+
+
 //NUMBER 45!!!
 
 /*
