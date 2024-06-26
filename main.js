@@ -1,3 +1,30 @@
+//NUMBER 49!!!
+
+/*
+Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
+
+Example #2: An input of 765 will/should return 493625 because 72 is 49, 62 is 36, and 52 is 25. (49-36-25)
+
+Note: The function accepts an integer and returns an integer.
+
+Happy Coding!
+*/
+
+//MY SOLUTION
+function squareDigits(num){
+  //split the numbers into an array
+  //map each number and square it
+  //join the numbers for concatanation
+  let final = []
+  let newNum = num.toString().split('')
+  newNum.map((number)=> {
+    final.push(Number(number) **2)
+  })
+  return Number(final.join(''))
+}
+
 //NUMBER 48!!!
 
 /*
