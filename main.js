@@ -1,3 +1,31 @@
+//NUMBER 55!!!
+
+/*
+Bean counting
+write a function called countChar that behaves like countBs, except it takes a second argument 
+that indicates the character that is to be counted (rather than counting only uppercase B characters). 
+Rewrite countBs to make use of this new function.
+
+example:
+
+console.log(countBs("BOB"));
+// → 2
+console.log(countChar("kakkerlak", "k"));
+// → 4
+*/
+
+//MY SOLUTION
+function countChar(str, char) {
+  let sum = 0
+  for (let i = 0; i <= str.length; i++) {
+      if (str[i] === char) {
+          sum = sum + 1
+      }
+  }
+  return sum
+}
+
+
 //NUMBER 54!!!
 
 /*
