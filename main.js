@@ -1,3 +1,30 @@
+//NUMBER 73!!!
+
+/*
+You are given an odd-length array of integers, in which all of them are the same, except for one single number.
+
+Complete the method which accepts such an array, and returns that single different number.
+
+The input array will always be valid! (odd-length >= 3)
+
+Examples
+[1, 1, 2] ==> 2
+[17, 17, 3, 17, 17, 17, 17] ==> 3
+*/
+
+//MY SOLUTION
+function stray(numbers) {
+  let emptyArr = []
+  let newNums = numbers.sort((a,b)=> {a-b})
+  newNums.forEach(num => {
+    if (newNums.indexOf(num) === newNums.lastIndexOf(num)) {
+      emptyArr.push(num)
+    }
+  })
+  return emptyArr.pop()
+}
+
+
 //NUMBER 72!!!
 
 /*
