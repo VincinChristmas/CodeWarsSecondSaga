@@ -1,3 +1,29 @@
+//NUMBER 98
+
+/*
+Coding in function countAnimals. function accept two parameters: animals, a string contains some animals; count, 
+an array list of which animals we should count. The result should be a number array.
+
+Examples
+countAnimals("dog,cat",["dog","cat"]); //=> [1,1]
+countAnimals("dog,cat",["dog","cat","pig"]); //=> [1,1,0]
+countAnimals("dog,dog,cat",["dog","cat"]); //=> [2,1]
+countAnimals("dog,dog,cat",["pig","cow"]); //=> [0,0]
+
+*/
+
+//MY SOLUTION
+function countAnimals(animals,count){
+  //coding here...
+  let newArr = []
+  
+  count.forEach((subject)=> {
+    newArr.push(animals.split(subject).length-1)
+    
+  })
+  return newArr
+}
+
 //NUMBER 97
 
 /*
